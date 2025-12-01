@@ -58,23 +58,11 @@
     <Compile Include="FrmAgregarEmpleado.Designer.cs">
       <DependentUpon>FrmAgregarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCargoEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCargoEdit.Designer.cs">
-      <DependentUpon>FrmCargoEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmCargosList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCargosList.Designer.cs">
       <DependentUpon>FrmCargosList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmDepartamentoEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmDepartamentoEdit.Designer.cs">
-      <DependentUpon>FrmDepartamentoEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDepartamentosList.cs">
       <SubType>Form</SubType>
