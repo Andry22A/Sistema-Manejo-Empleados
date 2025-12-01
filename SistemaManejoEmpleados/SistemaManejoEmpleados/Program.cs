@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ProyectoEmpleados;
+using System;
 using System.Windows.Forms;
 
 namespace SistemaManejoEmpleados
 {
     internal static class Program
     {
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // INICIAR EL FORMULARIO PRINCIPAL REAL
+            Application.Run(new FrmMain());
         }
     }
 }

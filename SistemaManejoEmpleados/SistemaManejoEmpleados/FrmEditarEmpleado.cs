@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaManejoEmpleados
 {
-    public partial class FrmEmpleadoEdit : Form
+    public partial class FrmEditarEmpleado : Form
     {
-        public FrmEmpleadoEdit()
+        public FrmEditarEmpleado()
         {
             InitializeComponent();
         }

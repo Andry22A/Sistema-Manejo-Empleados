@@ -1,5 +1,4 @@
-﻿using SistemaManejoEmpleados;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace ProyectoEmpleados
@@ -9,127 +8,121 @@ namespace ProyectoEmpleados
         public FrmMain()
         {
             InitializeComponent();
-            this.IsMdiContainer = true; // Convierte este formulario en MDI
+            this.IsMdiContainer = true;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
         }
 
-        // -------------------------
-        //  MENU: EMPLEADOS
-        // -------------------------
+        // -----------------------
+        // EMPLEADOS
+        // -----------------------
 
         private void mostrarEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmEmpleadosList frm = new FrmEmpleadosList();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Mostrar Empleados.");
         }
 
         private void agregarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmEmpleadoAgregar frm = new FrmEmpleadoAgregar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Agregar Empleado.");
         }
 
         private void actualizarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmEmpleadoActualizar frm = new FrmEmpleadoActualizar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Actualizar Empleado.");
         }
 
         private void eliminarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmEmpleadoEliminar frm = new FrmEmpleadoEliminar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Eliminar Empleado.");
         }
 
-        // -------------------------
-        //  MENU: DEPARTAMENTOS
-        // -------------------------
+        // -----------------------
+        // DEPARTAMENTOS
+        // -----------------------
 
         private void mostrarDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmDepartamentosList frm = new FrmDepartamentosList();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Mostrar Departamentos.");
         }
 
         private void agregarDepartamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmDepartamentoAgregar frm = new FrmDepartamentoAgregar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Agregar Departamento.");
         }
 
         private void actualizarDepartamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmDepartamentoActualizar frm = new FrmDepartamentoActualizar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Actualizar Departamento.");
         }
 
         private void eliminarDepartamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmDepartamentoEliminar frm = new FrmDepartamentoEliminar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Eliminar Departamento.");
         }
 
-        // -------------------------
-        //  MENU: CARGOS
-        // -------------------------
+        // -----------------------
+        // CARGOS
+        // -----------------------
 
         private void mostrarCargosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCargosList frm = new FrmCargosList();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Mostrar Cargos.");
         }
 
         private void agregarCargoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCargoAgregar frm = new FrmCargoAgregar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Agregar Cargo.");
         }
 
         private void actualizarCargoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCargoActualizar frm = new FrmCargoActualizar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Actualizar Cargo.");
         }
 
         private void eliminarCargoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCargoEliminar frm = new FrmCargoEliminar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá Eliminar Cargo.");
         }
 
-        // -------------------------
-        //  MENU: EXPORTAR
-        // -------------------------
+        // -----------------------
+        // EXPORTAR
+        // -----------------------
 
-        private void exportarTodoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exportarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmExportar frm = new FrmExportar();
-            frm.MdiParent = this;
-            frm.Show();
+            MessageBox.Show("Aquí se abrirá la exportación.");
         }
 
-        // -------------------------
-        //  MENU: SALIR
-        // -------------------------
+        // -----------------------
+        // SALIR
+        // -----------------------
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void departamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cargosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salirToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
