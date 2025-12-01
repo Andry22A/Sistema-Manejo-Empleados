@@ -52,8 +52,53 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCargoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoEdit.Designer.cs">
+      <DependentUpon>FrmCargoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCargosList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargosList.Designer.cs">
+      <DependentUpon>FrmCargosList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartamentoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartamentoEdit.Designer.cs">
+      <DependentUpon>FrmDepartamentoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartamentosList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartamentosList.Designer.cs">
+      <DependentUpon>FrmDepartamentosList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpleadoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleadoEdit.Designer.cs">
+      <DependentUpon>FrmEmpleadoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpleadosList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleadosList.Designer.cs">
+      <DependentUpon>FrmEmpleadosList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
