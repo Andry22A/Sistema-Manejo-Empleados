@@ -14,7 +14,7 @@ namespace SistemaManejoEmpleados
     {
         public FrmAgregarEmpleado()
         {
-            InitializeComponent();
+            
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -24,6 +24,98 @@ namespace SistemaManejoEmpleados
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void FrmAgregarEmpleado_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbCargo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSalario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFechaIngreso_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCargo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDepartamento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblApellido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpFechaIngreso_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // FrmAgregarEmpleado
+            // 
+            this.ClientSize = new System.Drawing.Size(278, 244);
+            this.Name = "FrmAgregarEmpleado";
+            this.ResumeLayout(false);
 
         }
     }
