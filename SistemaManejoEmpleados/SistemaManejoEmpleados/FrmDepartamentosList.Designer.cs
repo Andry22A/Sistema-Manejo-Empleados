@@ -154,11 +154,11 @@
             // 
             this.dgvDepartamentos.BackgroundColor = System.Drawing.Color.White;
             this.dgvDepartamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDepartamentos.Location = new System.Drawing.Point(237, 209);
+            this.dgvDepartamentos.Location = new System.Drawing.Point(35, 209);
             this.dgvDepartamentos.Name = "dgvDepartamentos";
             this.dgvDepartamentos.RowHeadersWidth = 62;
             this.dgvDepartamentos.RowTemplate.Height = 28;
-            this.dgvDepartamentos.Size = new System.Drawing.Size(754, 299);
+            this.dgvDepartamentos.Size = new System.Drawing.Size(1131, 299);
             this.dgvDepartamentos.TabIndex = 13;
             // 
             // FrmDepartamentosList

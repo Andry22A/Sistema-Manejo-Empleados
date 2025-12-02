@@ -24,7 +24,7 @@ namespace SistemaManejoEmpleados
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.Close(); // Cierra el formulario
         }
 
         private void FrmAgregarEmpleado_Load(object sender, EventArgs e)
@@ -109,9 +109,8 @@ namespace SistemaManejoEmpleados
 
         private void InitializeComponent()
         {
-            this.cmbDepartamento = new System.Windows.Forms.ComboBox();
+            this.cboCargo = new System.Windows.Forms.ComboBox();
             this.txtSalario = new System.Windows.Forms.TextBox();
-            this.cmbCargo = new System.Windows.Forms.TextBox();
             this.lblSalario = new System.Windows.Forms.Label();
             this.lblFechaIngreso = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
@@ -126,44 +125,47 @@ namespace SistemaManejoEmpleados
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblAFP = new System.Windows.Forms.Label();
+            this.lblARS = new System.Windows.Forms.Label();
+            this.lblISR = new System.Windows.Forms.Label();
+            this.lblTiempo = new System.Windows.Forms.Label();
+            this.txtAFP = new System.Windows.Forms.TextBox();
+            this.txtARS = new System.Windows.Forms.TextBox();
+            this.txtISR = new System.Windows.Forms.TextBox();
+            this.txtTiempo = new System.Windows.Forms.TextBox();
+            this.cboDepartamento = new System.Windows.Forms.ComboBox();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // cmbDepartamento
+            // cboCargo
             // 
-            this.cmbDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDepartamento.FormattingEnabled = true;
-            this.cmbDepartamento.Location = new System.Drawing.Point(306, 276);
-            this.cmbDepartamento.Name = "cmbDepartamento";
-            this.cmbDepartamento.Size = new System.Drawing.Size(336, 44);
-            this.cmbDepartamento.TabIndex = 54;
-            this.cmbDepartamento.SelectedIndexChanged += new System.EventHandler(this.cmbDepartamento_SelectedIndexChanged_1);
+            this.cboCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.cboCargo.FormattingEnabled = true;
+            this.cboCargo.Location = new System.Drawing.Point(295, 292);
+            this.cboCargo.Name = "cboCargo";
+            this.cboCargo.Size = new System.Drawing.Size(500, 38);
+            this.cboCargo.TabIndex = 54;
+            this.cboCargo.Text = "(lista: Gerente, Asistente, Cajero, etc.)";
+            this.cboCargo.SelectedIndexChanged += new System.EventHandler(this.cmbDepartamento_SelectedIndexChanged_1);
             // 
             // txtSalario
             // 
-            this.txtSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.Location = new System.Drawing.Point(241, 448);
+            this.txtSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txtSalario.Location = new System.Drawing.Point(241, 413);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(405, 41);
+            this.txtSalario.Size = new System.Drawing.Size(405, 37);
             this.txtSalario.TabIndex = 53;
             this.txtSalario.TextChanged += new System.EventHandler(this.txtSalario_TextChanged);
-            // 
-            // cmbCargo
-            // 
-            this.cmbCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCargo.Location = new System.Drawing.Point(232, 332);
-            this.cmbCargo.Name = "cmbCargo";
-            this.cmbCargo.Size = new System.Drawing.Size(410, 41);
-            this.cmbCargo.TabIndex = 52;
-            this.cmbCargo.TextChanged += new System.EventHandler(this.cmbCargo_TextChanged_1);
             // 
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
             this.lblSalario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(100, 451);
+            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblSalario.Location = new System.Drawing.Point(100, 412);
             this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(108, 36);
+            this.lblSalario.Size = new System.Drawing.Size(93, 30);
             this.lblSalario.TabIndex = 51;
             this.lblSalario.Text = "Salario";
             this.lblSalario.Click += new System.EventHandler(this.lblSalario_Click_1);
@@ -172,10 +174,10 @@ namespace SistemaManejoEmpleados
             // 
             this.lblFechaIngreso.AutoSize = true;
             this.lblFechaIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaIngreso.Location = new System.Drawing.Point(99, 390);
+            this.lblFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblFechaIngreso.Location = new System.Drawing.Point(99, 355);
             this.lblFechaIngreso.Name = "lblFechaIngreso";
-            this.lblFechaIngreso.Size = new System.Drawing.Size(246, 36);
+            this.lblFechaIngreso.Size = new System.Drawing.Size(210, 30);
             this.lblFechaIngreso.TabIndex = 50;
             this.lblFechaIngreso.Text = "Fecha de Ingreso";
             this.lblFechaIngreso.Click += new System.EventHandler(this.lblFechaIngreso_Click_1);
@@ -184,10 +186,10 @@ namespace SistemaManejoEmpleados
             // 
             this.lblCargo.AutoSize = true;
             this.lblCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargo.Location = new System.Drawing.Point(99, 335);
+            this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblCargo.Location = new System.Drawing.Point(99, 300);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(96, 36);
+            this.lblCargo.Size = new System.Drawing.Size(83, 30);
             this.lblCargo.TabIndex = 49;
             this.lblCargo.Text = "Cargo";
             this.lblCargo.Click += new System.EventHandler(this.lblCargo_Click_1);
@@ -196,10 +198,10 @@ namespace SistemaManejoEmpleados
             // 
             this.lblDepartamento.AutoSize = true;
             this.lblDepartamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartamento.Location = new System.Drawing.Point(99, 276);
+            this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblDepartamento.Location = new System.Drawing.Point(99, 241);
             this.lblDepartamento.Name = "lblDepartamento";
-            this.lblDepartamento.Size = new System.Drawing.Size(200, 36);
+            this.lblDepartamento.Size = new System.Drawing.Size(175, 30);
             this.lblDepartamento.TabIndex = 48;
             this.lblDepartamento.Text = "Departamento";
             this.lblDepartamento.Click += new System.EventHandler(this.lblDepartamento_Click_1);
@@ -208,10 +210,10 @@ namespace SistemaManejoEmpleados
             // 
             this.lblApellido.AutoSize = true;
             this.lblApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(99, 221);
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblApellido.Location = new System.Drawing.Point(99, 186);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(124, 36);
+            this.lblApellido.Size = new System.Drawing.Size(104, 30);
             this.lblApellido.TabIndex = 47;
             this.lblApellido.Text = "Apellido";
             this.lblApellido.Click += new System.EventHandler(this.lblApellido_Click_1);
@@ -220,10 +222,10 @@ namespace SistemaManejoEmpleados
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(99, 170);
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblNombre.Location = new System.Drawing.Point(99, 135);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(120, 36);
+            this.lblNombre.Size = new System.Drawing.Size(105, 30);
             this.lblNombre.TabIndex = 46;
             this.lblNombre.Text = "Nombre";
             this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click_1);
@@ -232,10 +234,10 @@ namespace SistemaManejoEmpleados
             // 
             this.lblID.AutoSize = true;
             this.lblID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(99, 114);
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblID.Location = new System.Drawing.Point(99, 79);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(44, 36);
+            this.lblID.Size = new System.Drawing.Size(38, 30);
             this.lblID.TabIndex = 45;
             this.lblID.Text = "ID";
             this.lblID.Click += new System.EventHandler(this.lblID_Click_1);
@@ -243,8 +245,8 @@ namespace SistemaManejoEmpleados
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Red;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(546, 528);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.btnCancelar.Location = new System.Drawing.Point(546, 709);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(269, 88);
             this.btnCancelar.TabIndex = 44;
@@ -255,8 +257,8 @@ namespace SistemaManejoEmpleados
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(241, 528);
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.btnGuardar.Location = new System.Drawing.Point(241, 709);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(269, 88);
             this.btnGuardar.TabIndex = 43;
@@ -266,59 +268,180 @@ namespace SistemaManejoEmpleados
             // 
             // dtpFechaIngreso
             // 
-            this.dtpFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaIngreso.Location = new System.Drawing.Point(347, 386);
+            this.dtpFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(347, 351);
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
-            this.dtpFechaIngreso.Size = new System.Drawing.Size(477, 41);
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(477, 37);
             this.dtpFechaIngreso.TabIndex = 42;
             this.dtpFechaIngreso.ValueChanged += new System.EventHandler(this.dtpFechaIngreso_ValueChanged_1);
             // 
             // txtApellido
             // 
-            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(236, 220);
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txtApellido.Location = new System.Drawing.Point(236, 185);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(406, 41);
+            this.txtApellido.Size = new System.Drawing.Size(406, 37);
             this.txtApellido.TabIndex = 41;
             this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged_1);
             // 
             // txtNombre
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(237, 171);
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txtNombre.Location = new System.Drawing.Point(237, 136);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(405, 41);
+            this.txtNombre.Size = new System.Drawing.Size(405, 37);
             this.txtNombre.TabIndex = 40;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged_1);
             // 
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(151, 114);
+            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txtID.Location = new System.Drawing.Point(151, 79);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(405, 41);
+            this.txtID.Size = new System.Drawing.Size(405, 37);
             this.txtID.TabIndex = 39;
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged_1);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.lblTitulo.Location = new System.Drawing.Point(300, 17);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(263, 36);
+            this.lblTitulo.Size = new System.Drawing.Size(226, 30);
             this.lblTitulo.TabIndex = 38;
             this.lblTitulo.Text = "Agregar Empleado";
             this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click_1);
             // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblEstado.Location = new System.Drawing.Point(101, 461);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(92, 30);
+            this.lblEstado.TabIndex = 55;
+            this.lblEstado.Text = "Estado";
+            // 
+            // lblAFP
+            // 
+            this.lblAFP.AutoSize = true;
+            this.lblAFP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblAFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblAFP.Location = new System.Drawing.Point(101, 500);
+            this.lblAFP.Name = "lblAFP";
+            this.lblAFP.Size = new System.Drawing.Size(63, 30);
+            this.lblAFP.TabIndex = 56;
+            this.lblAFP.Text = "AFP";
+            // 
+            // lblARS
+            // 
+            this.lblARS.AutoSize = true;
+            this.lblARS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblARS.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblARS.Location = new System.Drawing.Point(101, 540);
+            this.lblARS.Name = "lblARS";
+            this.lblARS.Size = new System.Drawing.Size(66, 30);
+            this.lblARS.TabIndex = 57;
+            this.lblARS.Text = "ARS";
+            // 
+            // lblISR
+            // 
+            this.lblISR.AutoSize = true;
+            this.lblISR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblISR.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblISR.Location = new System.Drawing.Point(101, 583);
+            this.lblISR.Name = "lblISR";
+            this.lblISR.Size = new System.Drawing.Size(55, 30);
+            this.lblISR.TabIndex = 58;
+            this.lblISR.Text = "ISR";
+            // 
+            // lblTiempo
+            // 
+            this.lblTiempo.AutoSize = true;
+            this.lblTiempo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblTiempo.Location = new System.Drawing.Point(101, 632);
+            this.lblTiempo.Name = "lblTiempo";
+            this.lblTiempo.Size = new System.Drawing.Size(268, 30);
+            this.lblTiempo.TabIndex = 59;
+            this.lblTiempo.Text = "Tiempo en la empresa";
+            // 
+            // txtAFP
+            // 
+            this.txtAFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txtAFP.Location = new System.Drawing.Point(241, 499);
+            this.txtAFP.Name = "txtAFP";
+            this.txtAFP.Size = new System.Drawing.Size(405, 37);
+            this.txtAFP.TabIndex = 61;
+            this.txtAFP.Text = "0.00";
+            // 
+            // txtARS
+            // 
+            this.txtARS.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txtARS.Location = new System.Drawing.Point(241, 546);
+            this.txtARS.Name = "txtARS";
+            this.txtARS.Size = new System.Drawing.Size(405, 37);
+            this.txtARS.TabIndex = 62;
+            this.txtARS.Text = "0.00";
+            // 
+            // txtISR
+            // 
+            this.txtISR.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txtISR.Location = new System.Drawing.Point(241, 589);
+            this.txtISR.Name = "txtISR";
+            this.txtISR.Size = new System.Drawing.Size(405, 37);
+            this.txtISR.TabIndex = 63;
+            this.txtISR.Text = "0.00";
+            // 
+            // txtTiempo
+            // 
+            this.txtTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txtTiempo.Location = new System.Drawing.Point(378, 634);
+            this.txtTiempo.Name = "txtTiempo";
+            this.txtTiempo.Size = new System.Drawing.Size(404, 37);
+            this.txtTiempo.TabIndex = 64;
+            this.txtTiempo.Text = "0 meses";
+            // 
+            // cboDepartamento
+            // 
+            this.cboDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.cboDepartamento.FormattingEnabled = true;
+            this.cboDepartamento.Location = new System.Drawing.Point(295, 238);
+            this.cboDepartamento.Name = "cboDepartamento";
+            this.cboDepartamento.Size = new System.Drawing.Size(500, 38);
+            this.cboDepartamento.TabIndex = 65;
+            this.cboDepartamento.Text = "(lista: Administración, Ventas, RH, etc.)";
+            // 
+            // cboEstado
+            // 
+            this.cboEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Location = new System.Drawing.Point(241, 455);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(405, 38);
+            this.cboEstado.TabIndex = 66;
+            this.cboEstado.Text = "(Activo, Inactivo)";
+            // 
             // FrmAgregarEmpleado
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(922, 649);
-            this.Controls.Add(this.cmbDepartamento);
+            this.ClientSize = new System.Drawing.Size(922, 818);
+            this.Controls.Add(this.cboEstado);
+            this.Controls.Add(this.cboDepartamento);
+            this.Controls.Add(this.txtTiempo);
+            this.Controls.Add(this.txtISR);
+            this.Controls.Add(this.txtARS);
+            this.Controls.Add(this.txtAFP);
+            this.Controls.Add(this.lblTiempo);
+            this.Controls.Add(this.lblISR);
+            this.Controls.Add(this.lblARS);
+            this.Controls.Add(this.lblAFP);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.cboCargo);
             this.Controls.Add(this.txtSalario);
-            this.Controls.Add(this.cmbCargo);
             this.Controls.Add(this.lblSalario);
             this.Controls.Add(this.lblFechaIngreso);
             this.Controls.Add(this.lblCargo);
@@ -341,9 +464,8 @@ namespace SistemaManejoEmpleados
 
         }
 
-        private ComboBox cmbDepartamento;
+        private ComboBox cboCargo;
         private TextBox txtSalario;
-        private TextBox cmbCargo;
         private Label lblSalario;
         private Label lblFechaIngreso;
         private Label lblCargo;
@@ -448,5 +570,17 @@ namespace SistemaManejoEmpleados
         {
 
         }
+
+        private Label lblEstado;
+        private Label lblAFP;
+        private Label lblARS;
+        private Label lblISR;
+        private Label lblTiempo;
+        private TextBox txtAFP;
+        private TextBox txtARS;
+        private TextBox txtISR;
+        private TextBox txtTiempo;
+        private ComboBox cboDepartamento;
+        private ComboBox cboEstado;
     }
 }

@@ -124,5 +124,20 @@ namespace ProyectoEmpleados
         {
 
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exportarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -89,6 +89,7 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(116, 29);
             this.toolStripMenuItem1.Text = "Empleados";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -172,25 +173,25 @@
             // mostrarCargosToolStripMenuItem
             // 
             this.mostrarCargosToolStripMenuItem.Name = "mostrarCargosToolStripMenuItem";
-            this.mostrarCargosToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.mostrarCargosToolStripMenuItem.Size = new System.Drawing.Size(243, 34);
             this.mostrarCargosToolStripMenuItem.Text = "Mostrar Cargos ";
             // 
             // agregarCargoToolStripMenuItem
             // 
             this.agregarCargoToolStripMenuItem.Name = "agregarCargoToolStripMenuItem";
-            this.agregarCargoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.agregarCargoToolStripMenuItem.Size = new System.Drawing.Size(243, 34);
             this.agregarCargoToolStripMenuItem.Text = "Agregar Cargo";
             // 
             // actualizarCargoToolStripMenuItem
             // 
             this.actualizarCargoToolStripMenuItem.Name = "actualizarCargoToolStripMenuItem";
-            this.actualizarCargoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.actualizarCargoToolStripMenuItem.Size = new System.Drawing.Size(243, 34);
             this.actualizarCargoToolStripMenuItem.Text = "Actualizar Cargo";
             // 
             // eliminarCargToolStripMenuItem
             // 
             this.eliminarCargToolStripMenuItem.Name = "eliminarCargToolStripMenuItem";
-            this.eliminarCargToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.eliminarCargToolStripMenuItem.Size = new System.Drawing.Size(243, 34);
             this.eliminarCargToolStripMenuItem.Text = "Eliminar Cargo";
             // 
             // exportarToolStripMenuItem
@@ -203,6 +204,7 @@
             this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
             this.exportarToolStripMenuItem.Size = new System.Drawing.Size(94, 29);
             this.exportarToolStripMenuItem.Text = "Exportar";
+            this.exportarToolStripMenuItem.Click += new System.EventHandler(this.exportarToolStripMenuItem_Click_1);
             // 
             // exportarEmpleadosACSVToolStripMenuItem
             // 
@@ -230,11 +232,12 @@
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(79, 29);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // salirToolStripMenuItem
@@ -243,14 +246,14 @@
             this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salirToolStripMenuItem1});
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 30);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click_1);
             // 
             // salirToolStripMenuItem1
             // 
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(147, 34);
             this.salirToolStripMenuItem1.Text = "Salir";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 

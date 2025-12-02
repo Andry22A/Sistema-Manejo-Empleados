@@ -52,6 +52,7 @@
             this.btnBuscar.TabIndex = 34;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblBuscar
             // 
@@ -63,6 +64,7 @@
             this.lblBuscar.Size = new System.Drawing.Size(96, 36);
             this.lblBuscar.TabIndex = 33;
             this.lblBuscar.Text = "Cargo";
+            this.lblBuscar.Click += new System.EventHandler(this.lblBuscar_Click);
             // 
             // btnCerrar
             // 
@@ -74,6 +76,7 @@
             this.btnCerrar.TabIndex = 32;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnExportar
             // 
@@ -85,6 +88,7 @@
             this.btnExportar.TabIndex = 31;
             this.btnExportar.Text = "Exportar CSV";
             this.btnExportar.UseVisualStyleBackColor = false;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // btnActualizar
             // 
@@ -96,6 +100,7 @@
             this.btnActualizar.TabIndex = 30;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnEliminar
             // 
@@ -107,6 +112,7 @@
             this.btnEliminar.TabIndex = 29;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -118,6 +124,7 @@
             this.btnEditar.TabIndex = 28;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnAgregar
             // 
@@ -129,6 +136,7 @@
             this.btnAgregar.TabIndex = 27;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtBuscar
             // 
@@ -138,6 +146,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(372, 39);
             this.txtBuscar.TabIndex = 26;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // lblTitulo
             // 
@@ -149,17 +158,19 @@
             this.lblTitulo.Size = new System.Drawing.Size(212, 32);
             this.lblTitulo.TabIndex = 25;
             this.lblTitulo.Text = "Lista de Cargos";
+            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // dgvCargos
             // 
             this.dgvCargos.BackgroundColor = System.Drawing.Color.White;
             this.dgvCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCargos.Location = new System.Drawing.Point(250, 219);
+            this.dgvCargos.Location = new System.Drawing.Point(12, 219);
             this.dgvCargos.Name = "dgvCargos";
             this.dgvCargos.RowHeadersWidth = 62;
             this.dgvCargos.RowTemplate.Height = 28;
-            this.dgvCargos.Size = new System.Drawing.Size(754, 299);
+            this.dgvCargos.Size = new System.Drawing.Size(1216, 299);
             this.dgvCargos.TabIndex = 24;
+            this.dgvCargos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCargos_CellContentClick);
             // 
             // FrmCargosList
             // 
@@ -179,6 +190,7 @@
             this.Controls.Add(this.dgvCargos);
             this.Name = "FrmCargosList";
             this.Text = "FrmCargosList";
+            this.Load += new System.EventHandler(this.FrmCargosList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCargos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
