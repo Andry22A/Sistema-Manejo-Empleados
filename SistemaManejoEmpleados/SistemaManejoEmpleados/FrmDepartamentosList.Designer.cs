@@ -165,6 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(1228, 681);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblBuscar);
@@ -179,6 +180,7 @@
             this.Controls.Add(this.dgvDepartamentos);
             this.Name = "FrmDepartamentosList";
             this.Text = "FrmDepartamentosList";
+            this.Load += new System.EventHandler(this.FrmDepartamentosList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDepartamentos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

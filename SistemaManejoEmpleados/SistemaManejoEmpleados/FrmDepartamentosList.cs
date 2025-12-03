@@ -21,5 +21,11 @@ namespace SistemaManejoEmpleados
         {
 
         }
+
+        private void FrmDepartamentosList_Load(object sender, EventArgs e)
+        {
+            dgvDepartamentos.DataSource = null;
+            
+        }
     }
 }

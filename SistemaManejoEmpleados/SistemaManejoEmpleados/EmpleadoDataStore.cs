@@ -1,23 +1,19 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace SistemaManejoEmpleados
 {
     public static class EmpleadoDataStore
     {
-        public static List<Empleado> ListaEmpleados { get; private set; } = new List<Empleado>();
+        public static List<Empleado> Empleados = new List<Empleado>();
 
-        public static void Agregar(Empleado empleado)
+        public static void Agregar(Empleado e)
         {
-            ListaEmpleados.Add(empleado);
+            Empleados.Add(e);
         }
 
-        public static int GenerarId()
+        public static void Eliminar(int id)
         {
-            if (ListaEmpleados.Count == 0)
-                return 1;
-
-            return ListaEmpleados.Max(e => e.Id) + 1;
+            Empleados.RemoveAll(x => x.EmpleadoID == id);
         }
     }
 }

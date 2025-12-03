@@ -8,5 +8,7 @@ namespace SistemaManejoEmpleados
 {
     internal class Cargo
     {
+        public int CargoID { get; set; }
+        public string Nombre { get; set; }
     }
 }

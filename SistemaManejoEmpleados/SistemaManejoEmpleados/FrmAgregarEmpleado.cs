@@ -427,7 +427,7 @@ namespace SistemaManejoEmpleados
             // 
             // FrmAgregarEmpleado
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(922, 818);
             this.Controls.Add(this.cboEstado);
             this.Controls.Add(this.cboDepartamento);

@@ -16,5 +16,10 @@ namespace SistemaManejoEmpleados
         {
             InitializeComponent();
         }
+
+        private void FrmEditarEmpleado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

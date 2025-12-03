@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cargo.cs" />
+    <Compile Include="CargoDataStore.cs" />
+    <Compile Include="Departamento.cs" />
+    <Compile Include="DepartamentoDataStore.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="EmpleadoDataStore.cs" />
     <Compile Include="Form1.cs">
@@ -53,6 +57,18 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarCargo.Designer.cs">
+      <DependentUpon>FrmAgregarCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarDepartamento.Designer.cs">
+      <DependentUpon>FrmAgregarDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAgregarEmpleado.cs">
       <SubType>Form</SubType>
@@ -71,6 +87,18 @@
     </Compile>
     <Compile Include="FrmDepartamentosList.Designer.cs">
       <DependentUpon>FrmDepartamentosList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarCargo.Designer.cs">
+      <DependentUpon>FrmEditarCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarDepartamento.Designer.cs">
+      <DependentUpon>FrmEditarDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEditarEmpleado.cs">
       <SubType>Form</SubType>
@@ -92,6 +120,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAgregarCargo.resx">
+      <DependentUpon>FrmAgregarCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarDepartamento.resx">
+      <DependentUpon>FrmAgregarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarEmpleado.resx">
       <DependentUpon>FrmAgregarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +134,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDepartamentosList.resx">
       <DependentUpon>FrmDepartamentosList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarCargo.resx">
+      <DependentUpon>FrmEditarCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarDepartamento.resx">
+      <DependentUpon>FrmEditarDepartamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditarEmpleado.resx">
       <DependentUpon>FrmEditarEmpleado.cs</DependentUpon>
@@ -119,6 +159,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="CSVExporter%28exportacion a .csv%29" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaManejoEmpleados
 {
-    class CSVExporter_exportacion_a
+    internal static class CSVExporter
     {
+        public static void Exportar<T>(List<T> datos, string ruta)
+        {
+            using (var writer = new StreamWriter(ruta))
+            {
+                var props = typeof(T).GetProperties();
+                writer.WriteLine(string.Join(",", props.Select(p => p.Name)));
+
+                foreach (var item in datos)
+                {
+                    writer.WriteLine(string.Join(",", props.Select(p => p.GetValue(item))));
+                }
+            }
+        }
     }
 }

@@ -1,16 +1,16 @@
-﻿namespace ProyectoEmpleados
+﻿namespace SistemaManejoEmpleados
 {
     partial class FrmMain
     {
         /// <summary>
-        /// Required designer variable.
+        /// Variable del diseñador.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Limpiar recursos.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing"></param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,319 +20,126 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de Windows Form
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mostrarDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mostrarCargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarCargoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarCargoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarCargToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarEmpleadosACSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarDepartamentosACSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarCargosACSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mostrarEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnDepartamentos = new System.Windows.Forms.Button();
+            this.btnCargos = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnAgregarEmpleado = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // lblTitulo
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.empleadosToolStripMenuItem,
-            this.departamentosToolStripMenuItem,
-            this.cargosToolStripMenuItem,
-            this.exportarToolStripMenuItem,
-            this.ayudaToolStripMenuItem,
-            this.salirToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1124, 33);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.DeepPink;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(257, 83);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(456, 36);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Sistema deManejo de Empleados";
+            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
-            // toolStripMenuItem1
+            // btnEmpleados
             // 
-            this.toolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(116, 29);
-            this.toolStripMenuItem1.Text = "Empleados";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.btnEmpleados.BackColor = System.Drawing.Color.Aqua;
+            this.btnEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpleados.Location = new System.Drawing.Point(28, 244);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(194, 66);
+            this.btnEmpleados.TabIndex = 1;
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.UseVisualStyleBackColor = false;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click_1);
             // 
-            // toolStripMenuItem2
+            // btnDepartamentos
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(275, 34);
-            this.toolStripMenuItem2.Text = "Mostrar Empleados";
+            this.btnDepartamentos.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.btnDepartamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepartamentos.Location = new System.Drawing.Point(204, 350);
+            this.btnDepartamentos.Name = "btnDepartamentos";
+            this.btnDepartamentos.Size = new System.Drawing.Size(197, 66);
+            this.btnDepartamentos.TabIndex = 2;
+            this.btnDepartamentos.Text = "Departamentos";
+            this.btnDepartamentos.UseVisualStyleBackColor = false;
+            this.btnDepartamentos.Click += new System.EventHandler(this.btnDepartamentos_Click_1);
             // 
-            // toolStripMenuItem3
+            // btnCargos
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(275, 34);
-            this.toolStripMenuItem3.Text = "Agregar Empleado";
+            this.btnCargos.BackColor = System.Drawing.Color.Pink;
+            this.btnCargos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargos.Location = new System.Drawing.Point(408, 244);
+            this.btnCargos.Name = "btnCargos";
+            this.btnCargos.Size = new System.Drawing.Size(237, 66);
+            this.btnCargos.TabIndex = 3;
+            this.btnCargos.Text = "Cargos";
+            this.btnCargos.UseVisualStyleBackColor = false;
+            this.btnCargos.Click += new System.EventHandler(this.btnCargos_Click_1);
             // 
-            // toolStripMenuItem4
+            // btnSalir
             // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(275, 34);
-            this.toolStripMenuItem4.Text = "Actualizar Empleado";
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(752, 244);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(163, 66);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             // 
-            // toolStripMenuItem5
+            // btnAgregarEmpleado
             // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(275, 34);
-            this.toolStripMenuItem5.Text = "Eliminar Empleado";
-            // 
-            // empleadosToolStripMenuItem
-            // 
-            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(16, 29);
-            // 
-            // departamentosToolStripMenuItem
-            // 
-            this.departamentosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.departamentosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mostrarDepartamentosToolStripMenuItem,
-            this.agregarDepartamentoToolStripMenuItem,
-            this.actualizarDepartamentoToolStripMenuItem,
-            this.eliminarDepartamentoToolStripMenuItem});
-            this.departamentosToolStripMenuItem.Name = "departamentosToolStripMenuItem";
-            this.departamentosToolStripMenuItem.Size = new System.Drawing.Size(151, 29);
-            this.departamentosToolStripMenuItem.Text = "Departamentos";
-            this.departamentosToolStripMenuItem.Click += new System.EventHandler(this.departamentosToolStripMenuItem_Click);
-            // 
-            // mostrarDepartamentosToolStripMenuItem
-            // 
-            this.mostrarDepartamentosToolStripMenuItem.Name = "mostrarDepartamentosToolStripMenuItem";
-            this.mostrarDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(308, 34);
-            this.mostrarDepartamentosToolStripMenuItem.Text = "Mostrar Departamentos";
-            // 
-            // agregarDepartamentoToolStripMenuItem
-            // 
-            this.agregarDepartamentoToolStripMenuItem.Name = "agregarDepartamentoToolStripMenuItem";
-            this.agregarDepartamentoToolStripMenuItem.Size = new System.Drawing.Size(308, 34);
-            this.agregarDepartamentoToolStripMenuItem.Text = "Agregar Departamento";
-            // 
-            // actualizarDepartamentoToolStripMenuItem
-            // 
-            this.actualizarDepartamentoToolStripMenuItem.Name = "actualizarDepartamentoToolStripMenuItem";
-            this.actualizarDepartamentoToolStripMenuItem.Size = new System.Drawing.Size(308, 34);
-            this.actualizarDepartamentoToolStripMenuItem.Text = "Actualizar departamento";
-            // 
-            // eliminarDepartamentoToolStripMenuItem
-            // 
-            this.eliminarDepartamentoToolStripMenuItem.Name = "eliminarDepartamentoToolStripMenuItem";
-            this.eliminarDepartamentoToolStripMenuItem.Size = new System.Drawing.Size(308, 34);
-            this.eliminarDepartamentoToolStripMenuItem.Text = "Eliminar departamento";
-            // 
-            // cargosToolStripMenuItem
-            // 
-            this.cargosToolStripMenuItem.BackColor = System.Drawing.Color.DarkOrange;
-            this.cargosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mostrarCargosToolStripMenuItem,
-            this.agregarCargoToolStripMenuItem,
-            this.actualizarCargoToolStripMenuItem,
-            this.eliminarCargToolStripMenuItem});
-            this.cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
-            this.cargosToolStripMenuItem.Size = new System.Drawing.Size(84, 29);
-            this.cargosToolStripMenuItem.Text = "Cargos";
-            this.cargosToolStripMenuItem.Click += new System.EventHandler(this.cargosToolStripMenuItem_Click);
-            // 
-            // mostrarCargosToolStripMenuItem
-            // 
-            this.mostrarCargosToolStripMenuItem.Name = "mostrarCargosToolStripMenuItem";
-            this.mostrarCargosToolStripMenuItem.Size = new System.Drawing.Size(243, 34);
-            this.mostrarCargosToolStripMenuItem.Text = "Mostrar Cargos ";
-            // 
-            // agregarCargoToolStripMenuItem
-            // 
-            this.agregarCargoToolStripMenuItem.Name = "agregarCargoToolStripMenuItem";
-            this.agregarCargoToolStripMenuItem.Size = new System.Drawing.Size(243, 34);
-            this.agregarCargoToolStripMenuItem.Text = "Agregar Cargo";
-            // 
-            // actualizarCargoToolStripMenuItem
-            // 
-            this.actualizarCargoToolStripMenuItem.Name = "actualizarCargoToolStripMenuItem";
-            this.actualizarCargoToolStripMenuItem.Size = new System.Drawing.Size(243, 34);
-            this.actualizarCargoToolStripMenuItem.Text = "Actualizar Cargo";
-            // 
-            // eliminarCargToolStripMenuItem
-            // 
-            this.eliminarCargToolStripMenuItem.Name = "eliminarCargToolStripMenuItem";
-            this.eliminarCargToolStripMenuItem.Size = new System.Drawing.Size(243, 34);
-            this.eliminarCargToolStripMenuItem.Text = "Eliminar Cargo";
-            // 
-            // exportarToolStripMenuItem
-            // 
-            this.exportarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.exportarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exportarEmpleadosACSVToolStripMenuItem,
-            this.exportarDepartamentosACSVToolStripMenuItem,
-            this.exportarCargosACSVToolStripMenuItem});
-            this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
-            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(94, 29);
-            this.exportarToolStripMenuItem.Text = "Exportar";
-            this.exportarToolStripMenuItem.Click += new System.EventHandler(this.exportarToolStripMenuItem_Click_1);
-            // 
-            // exportarEmpleadosACSVToolStripMenuItem
-            // 
-            this.exportarEmpleadosACSVToolStripMenuItem.Name = "exportarEmpleadosACSVToolStripMenuItem";
-            this.exportarEmpleadosACSVToolStripMenuItem.Size = new System.Drawing.Size(359, 34);
-            this.exportarEmpleadosACSVToolStripMenuItem.Text = "Exportar Empleados a CSV";
-            // 
-            // exportarDepartamentosACSVToolStripMenuItem
-            // 
-            this.exportarDepartamentosACSVToolStripMenuItem.Name = "exportarDepartamentosACSVToolStripMenuItem";
-            this.exportarDepartamentosACSVToolStripMenuItem.Size = new System.Drawing.Size(359, 34);
-            this.exportarDepartamentosACSVToolStripMenuItem.Text = "Exportar Departamentos a CSV";
-            // 
-            // exportarCargosACSVToolStripMenuItem
-            // 
-            this.exportarCargosACSVToolStripMenuItem.Name = "exportarCargosACSVToolStripMenuItem";
-            this.exportarCargosACSVToolStripMenuItem.Size = new System.Drawing.Size(359, 34);
-            this.exportarCargosACSVToolStripMenuItem.Text = "Exportar Cargos a CSV";
-            // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.BackColor = System.Drawing.Color.Chartreuse;
-            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.acercaDeToolStripMenuItem});
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(79, 29);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
-            this.acercaDeToolStripMenuItem.Text = "Acerca de";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.BackColor = System.Drawing.Color.Red;
-            this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirToolStripMenuItem1});
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click_1);
-            // 
-            // salirToolStripMenuItem1
-            // 
-            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(147, 34);
-            this.salirToolStripMenuItem1.Text = "Salir";
-            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
-            // 
-            // mostrarEmpleadosToolStripMenuItem
-            // 
-            this.mostrarEmpleadosToolStripMenuItem.Name = "mostrarEmpleadosToolStripMenuItem";
-            this.mostrarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(275, 34);
-            this.mostrarEmpleadosToolStripMenuItem.Text = "Mostrar Empleados";
-            // 
-            // agregarEmpleadoToolStripMenuItem
-            // 
-            this.agregarEmpleadoToolStripMenuItem.Name = "agregarEmpleadoToolStripMenuItem";
-            this.agregarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(275, 34);
-            this.agregarEmpleadoToolStripMenuItem.Text = "Agregar Empleado";
-            // 
-            // actualizarEmpleadoToolStripMenuItem
-            // 
-            this.actualizarEmpleadoToolStripMenuItem.Name = "actualizarEmpleadoToolStripMenuItem";
-            this.actualizarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(275, 34);
-            this.actualizarEmpleadoToolStripMenuItem.Text = "Actualizar empleado";
-            // 
-            // eliminarEmpleadoToolStripMenuItem
-            // 
-            this.eliminarEmpleadoToolStripMenuItem.Name = "eliminarEmpleadoToolStripMenuItem";
-            this.eliminarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(275, 34);
-            this.eliminarEmpleadoToolStripMenuItem.Text = "Eliminar empleado";
+            this.btnAgregarEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAgregarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEmpleado.Location = new System.Drawing.Point(586, 350);
+            this.btnAgregarEmpleado.Name = "btnAgregarEmpleado";
+            this.btnAgregarEmpleado.Size = new System.Drawing.Size(234, 66);
+            this.btnAgregarEmpleado.TabIndex = 5;
+            this.btnAgregarEmpleado.Text = "Agregar Empleado";
+            this.btnAgregarEmpleado.UseVisualStyleBackColor = false;
+            this.btnAgregarEmpleado.Click += new System.EventHandler(this.btnAgregarEmpleado_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1124, 450);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(1012, 750);
+            this.Controls.Add(this.btnAgregarEmpleado);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnCargos);
+            this.Controls.Add(this.btnDepartamentos);
+            this.Controls.Add(this.btnEmpleados);
+            this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "FrmMain";
-            this.Text = "FrmMain";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "MENÚ PRINCIPAL";
             this.Load += new System.EventHandler(this.FrmMain_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Button btnEmpleados;
+        private System.Windows.Forms.Button btnDepartamentos;
+        private System.Windows.Forms.Button btnCargos;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnAgregarEmpleado;
+
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem departamentosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mostrarEmpleadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarEmpleadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarEmpleadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarEmpleadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mostrarDepartamentosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarDepartamentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarDepartamentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarDepartamentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mostrarCargosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarCargoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarCargoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarCargToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem exportarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportarEmpleadosACSVToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportarDepartamentosACSVToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportarCargosACSVToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        // ⭐⭐⭐⭐
+        // SI YA TIENES BOTONES O LABELS EN EL FORM, DEBEN ESTAR DECLARADOS AQUÍ.
+        // NO BORRES NADA QUE YA ESTÉ AQUÍ ABAJO.
+        // SOLO AGREGA SI HACEN FALTA.
+        // ⭐⭐⭐⭐
     }
 }
