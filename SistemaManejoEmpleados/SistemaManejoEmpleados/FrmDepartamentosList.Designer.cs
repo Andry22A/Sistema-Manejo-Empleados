@@ -52,6 +52,7 @@
             this.btnBuscar.TabIndex = 23;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblBuscar
             // 
@@ -63,6 +64,7 @@
             this.lblBuscar.Size = new System.Drawing.Size(200, 36);
             this.lblBuscar.TabIndex = 22;
             this.lblBuscar.Text = "Departamento";
+            this.lblBuscar.Click += new System.EventHandler(this.lblBuscar_Click);
             // 
             // btnCerrar
             // 
@@ -74,6 +76,7 @@
             this.btnCerrar.TabIndex = 21;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnExportar
             // 
@@ -85,6 +88,7 @@
             this.btnExportar.TabIndex = 20;
             this.btnExportar.Text = "Exportar CSV";
             this.btnExportar.UseVisualStyleBackColor = false;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // btnActualizar
             // 
@@ -96,6 +100,7 @@
             this.btnActualizar.TabIndex = 19;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnEliminar
             // 
@@ -107,6 +112,7 @@
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -118,6 +124,7 @@
             this.btnEditar.TabIndex = 17;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnAgregar
             // 
@@ -129,6 +136,7 @@
             this.btnAgregar.TabIndex = 16;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtBuscar
             // 
@@ -138,6 +146,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(372, 39);
             this.txtBuscar.TabIndex = 15;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // lblTitulo
             // 
@@ -149,6 +158,7 @@
             this.lblTitulo.Size = new System.Drawing.Size(315, 32);
             this.lblTitulo.TabIndex = 14;
             this.lblTitulo.Text = "Lista de Departamentos";
+            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // dgvDepartamentos
             // 
@@ -160,6 +170,7 @@
             this.dgvDepartamentos.RowTemplate.Height = 28;
             this.dgvDepartamentos.Size = new System.Drawing.Size(1131, 299);
             this.dgvDepartamentos.TabIndex = 13;
+            this.dgvDepartamentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDepartamentos_CellContentClick);
             // 
             // FrmDepartamentosList
             // 

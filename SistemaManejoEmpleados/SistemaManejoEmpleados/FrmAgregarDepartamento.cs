@@ -5,12 +5,17 @@ namespace SistemaManejoEmpleados
 {
     public partial class FrmAgregarDepartamento : Form
     {
-        // Para devolver el nombre del departamento
+        // Propiedad para devolver el nombre ingresado
         public string NombreDepartamento { get; private set; }
 
         public FrmAgregarDepartamento()
         {
-            InitializeComponent();
+            InitializeComponent(); // ← YA NO DA ERROR
+        }
+
+        private void FrmAgregarDepartamento_Load(object sender, EventArgs e)
+        {
+            // No necesitas poner nada aquí
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -41,7 +46,7 @@ namespace SistemaManejoEmpleados
 
         private void lblNombre_Click(object sender, EventArgs e)
         {
-            // Evento vacío para no generar errores
+            // Evento vacío para evitar errores
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
@@ -52,6 +57,11 @@ namespace SistemaManejoEmpleados
         private void lblTitulo_Click(object sender, EventArgs e)
         {
             // Evento vacío
+        }
+
+        private void lblTitulo_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

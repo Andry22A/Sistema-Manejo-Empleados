@@ -47,6 +47,7 @@
             this.lblNombre.Size = new System.Drawing.Size(223, 30);
             this.lblNombre.TabIndex = 60;
             this.lblNombre.Text = "Nombre del Cargo";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // lblID
             // 
@@ -58,6 +59,7 @@
             this.lblID.Size = new System.Drawing.Size(38, 30);
             this.lblID.TabIndex = 59;
             this.lblID.Text = "ID";
+            this.lblID.Click += new System.EventHandler(this.lblID_Click);
             // 
             // txtNombre
             // 
@@ -66,6 +68,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(405, 37);
             this.txtNombre.TabIndex = 58;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtID
             // 
@@ -76,6 +79,7 @@
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(405, 37);
             this.txtID.TabIndex = 57;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // lblTitulo
             // 
@@ -87,6 +91,7 @@
             this.lblTitulo.Size = new System.Drawing.Size(157, 30);
             this.lblTitulo.TabIndex = 56;
             this.lblTitulo.Text = "Editar Cargo";
+            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // btnCancelar
             // 
@@ -98,6 +103,7 @@
             this.btnCancelar.TabIndex = 55;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -109,6 +115,7 @@
             this.btnGuardar.TabIndex = 54;
             this.btnGuardar.Text = "Guardar Cambios";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrmEditarCargo
             // 

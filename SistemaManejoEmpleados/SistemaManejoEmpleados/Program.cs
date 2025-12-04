@@ -1,5 +1,4 @@
-﻿using ProyectoEmpleados;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace SistemaManejoEmpleados
@@ -12,7 +11,6 @@ namespace SistemaManejoEmpleados
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // INICIAR EL FORMULARIO PRINCIPAL REAL
             Application.Run(new FrmMain());
         }
     }

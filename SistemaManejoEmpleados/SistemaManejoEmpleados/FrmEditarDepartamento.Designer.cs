@@ -47,6 +47,7 @@
             this.btnCancelar.TabIndex = 48;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -58,6 +59,7 @@
             this.btnGuardar.TabIndex = 47;
             this.btnGuardar.Text = "Guardar Cambios";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // lblNombre
             // 
@@ -69,6 +71,7 @@
             this.lblNombre.Size = new System.Drawing.Size(315, 30);
             this.lblNombre.TabIndex = 53;
             this.lblNombre.Text = "Nombre del Departamento";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // lblID
             // 
@@ -80,6 +83,7 @@
             this.lblID.Size = new System.Drawing.Size(38, 30);
             this.lblID.TabIndex = 52;
             this.lblID.Text = "ID";
+            this.lblID.Click += new System.EventHandler(this.lblID_Click);
             // 
             // txtNombre
             // 
@@ -88,6 +92,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(405, 37);
             this.txtNombre.TabIndex = 51;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtID
             // 
@@ -98,6 +103,7 @@
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(405, 37);
             this.txtID.TabIndex = 50;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // lblTitulo
             // 
@@ -109,6 +115,7 @@
             this.lblTitulo.Size = new System.Drawing.Size(249, 30);
             this.lblTitulo.TabIndex = 49;
             this.lblTitulo.Text = "Editar Departamento";
+            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // FrmEditarDepartamento
             // 
