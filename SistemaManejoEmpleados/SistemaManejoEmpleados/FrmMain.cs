@@ -10,15 +10,20 @@ namespace SistemaManejoEmpleados
             InitializeComponent();
         }
 
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            // No tocar diseño
+        }
+
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
             FrmEmpleadosList frm = new FrmEmpleadosList();
             frm.ShowDialog();
         }
 
-        private void btnDepartamentos_Click(object sender, EventArgs e)
+        private void btnAgregarEmpleado_Click(object sender, EventArgs e)
         {
-            FrmDepartamentosList frm = new FrmDepartamentosList();
+            FrmAgregarEmpleado frm = new FrmAgregarEmpleado();
             frm.ShowDialog();
         }
 
@@ -28,44 +33,20 @@ namespace SistemaManejoEmpleados
             frm.ShowDialog();
         }
 
+        private void btnDepartamentos_Click(object sender, EventArgs e)
+        {
+            FrmDepartamentosList frm = new FrmDepartamentosList();
+            frm.ShowDialog();
+        }
+
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void btnAgregarEmpleado_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSalir_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCargos_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDepartamentos_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnEmpleados_Click_1(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
 
         private void lblTitulo_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FrmMain_Load(object sender, EventArgs e)
-        {
-
+            // Evento vacío para evitar error
         }
     }
 }
