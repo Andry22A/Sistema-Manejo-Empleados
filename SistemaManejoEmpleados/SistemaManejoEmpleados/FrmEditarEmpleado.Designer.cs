@@ -2,15 +2,8 @@
 {
     partial class FrmEditarEmpleado
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.cmbDepartamento = new System.Windows.Forms.ComboBox();
@@ -49,176 +38,193 @@
             // 
             // cmbDepartamento
             // 
-            this.cmbDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.cmbDepartamento.FormattingEnabled = true;
             this.cmbDepartamento.Location = new System.Drawing.Point(275, 329);
             this.cmbDepartamento.Name = "cmbDepartamento";
             this.cmbDepartamento.Size = new System.Drawing.Size(336, 44);
             this.cmbDepartamento.TabIndex = 37;
+            this.cmbDepartamento.SelectedIndexChanged += new System.EventHandler(this.cmbDepartamento_SelectedIndexChanged);
             // 
             // txtSalario
             // 
-            this.txtSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.txtSalario.Location = new System.Drawing.Point(210, 501);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(405, 41);
             this.txtSalario.TabIndex = 36;
+            this.txtSalario.TextChanged += new System.EventHandler(this.txtSalario_TextChanged);
             // 
             // cmbCargo
             // 
-            this.cmbCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.cmbCargo.Location = new System.Drawing.Point(201, 385);
             this.cmbCargo.Name = "cmbCargo";
             this.cmbCargo.Size = new System.Drawing.Size(410, 41);
             this.cmbCargo.TabIndex = 35;
+            this.cmbCargo.TextChanged += new System.EventHandler(this.cmbCargo_TextChanged);
             // 
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
-            this.lblSalario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblSalario.Location = new System.Drawing.Point(69, 504);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(108, 36);
             this.lblSalario.TabIndex = 34;
             this.lblSalario.Text = "Salario";
+            this.lblSalario.Click += new System.EventHandler(this.lblSalario_Click);
             // 
             // lblFechaIngreso
             // 
             this.lblFechaIngreso.AutoSize = true;
-            this.lblFechaIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaIngreso.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            this.lblFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblFechaIngreso.Location = new System.Drawing.Point(68, 443);
             this.lblFechaIngreso.Name = "lblFechaIngreso";
             this.lblFechaIngreso.Size = new System.Drawing.Size(246, 36);
             this.lblFechaIngreso.TabIndex = 33;
             this.lblFechaIngreso.Text = "Fecha de Ingreso";
+            this.lblFechaIngreso.Click += new System.EventHandler(this.lblFechaIngreso_Click);
             // 
             // lblCargo
             // 
             this.lblCargo.AutoSize = true;
-            this.lblCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargo.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblCargo.Location = new System.Drawing.Point(68, 388);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(96, 36);
             this.lblCargo.TabIndex = 32;
             this.lblCargo.Text = "Cargo";
+            this.lblCargo.Click += new System.EventHandler(this.lblCargo_Click);
             // 
             // lblDepartamento
             // 
             this.lblDepartamento.AutoSize = true;
-            this.lblDepartamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDepartamento.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblDepartamento.Location = new System.Drawing.Point(68, 329);
             this.lblDepartamento.Name = "lblDepartamento";
             this.lblDepartamento.Size = new System.Drawing.Size(200, 36);
             this.lblDepartamento.TabIndex = 31;
             this.lblDepartamento.Text = "Departamento";
+            this.lblDepartamento.Click += new System.EventHandler(this.lblDepartamento_Click);
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblApellido.Location = new System.Drawing.Point(68, 274);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(124, 36);
             this.lblApellido.TabIndex = 30;
             this.lblApellido.Text = "Apellido";
+            this.lblApellido.Click += new System.EventHandler(this.lblApellido_Click);
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblNombre.Location = new System.Drawing.Point(68, 223);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(120, 36);
             this.lblNombre.TabIndex = 29;
             this.lblNombre.Text = "Nombre";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblID.Location = new System.Drawing.Point(68, 167);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(44, 36);
             this.lblID.TabIndex = 28;
             this.lblID.Text = "ID";
+            this.lblID.Click += new System.EventHandler(this.lblID_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Red;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.btnCancelar.Location = new System.Drawing.Point(515, 581);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(269, 88);
             this.btnCancelar.TabIndex = 27;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(255, 128, 128);
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.btnGuardar.Location = new System.Drawing.Point(210, 581);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(269, 88);
             this.btnGuardar.TabIndex = 26;
             this.btnGuardar.Text = "Guardar Cambios";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // dtpFechaIngreso
             // 
-            this.dtpFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.dtpFechaIngreso.Location = new System.Drawing.Point(316, 439);
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
             this.dtpFechaIngreso.Size = new System.Drawing.Size(477, 41);
             this.dtpFechaIngreso.TabIndex = 25;
+            this.dtpFechaIngreso.ValueChanged += new System.EventHandler(this.dtpFechaIngreso_ValueChanged);
             // 
             // txtApellido
             // 
-            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.txtApellido.Location = new System.Drawing.Point(205, 273);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(406, 41);
             this.txtApellido.TabIndex = 24;
+            this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
             // 
             // txtNombre
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.txtNombre.Location = new System.Drawing.Point(206, 224);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(405, 41);
             this.txtNombre.TabIndex = 23;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.txtID.Location = new System.Drawing.Point(120, 167);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(405, 41);
             this.txtID.TabIndex = 22;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblTitulo.Location = new System.Drawing.Point(269, 20);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(234, 36);
             this.lblTitulo.TabIndex = 21;
             this.lblTitulo.Text = "Editar Empleado";
+            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // FrmEditarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(192, 255, 255);
             this.ClientSize = new System.Drawing.Size(884, 700);
             this.Controls.Add(this.cmbDepartamento);
             this.Controls.Add(this.txtSalario);
@@ -242,7 +248,6 @@
             this.Load += new System.EventHandler(this.FrmEditarEmpleado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

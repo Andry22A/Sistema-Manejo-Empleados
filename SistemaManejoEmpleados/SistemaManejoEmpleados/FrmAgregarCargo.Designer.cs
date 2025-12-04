@@ -45,6 +45,7 @@
             this.lblNombre.Size = new System.Drawing.Size(223, 30);
             this.lblNombre.TabIndex = 57;
             this.lblNombre.Text = "Nombre del Cargo";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // txtNombre
             // 
@@ -53,6 +54,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(405, 37);
             this.txtNombre.TabIndex = 56;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // btnCancelar
             // 
@@ -64,6 +66,7 @@
             this.btnCancelar.TabIndex = 55;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -75,6 +78,7 @@
             this.btnGuardar.TabIndex = 54;
             this.btnGuardar.Text = "Guardar Cambios";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // lblTitulo
             // 
@@ -86,6 +90,7 @@
             this.lblTitulo.Size = new System.Drawing.Size(188, 30);
             this.lblTitulo.TabIndex = 58;
             this.lblTitulo.Text = "Agregar Cargo ";
+            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // FrmAgregarCargo
             // 
